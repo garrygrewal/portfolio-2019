@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
+	<!-- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="css/main2.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+
+	<link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" async></script>
+	<script src="js/mobile_nav.js" async></script>
+
+  <title>Garry Grewal</title>
+</head>
+<body>
+  <div class="main-content box">
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
+
+    <div class="banner-image-background">
+			<div class="topnav" id="myTopnav">
+			  <a href="home.html" class="active">Garry Grewal</a>
+				<a href="#" class="rightLink blank"></a>
+				<a href="mailto:garryg@sfu.ca" class="rightLink"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp; Email</a>
+				<a href="https://www.linkedin.com/in/garry-grewal/" class="rightLink"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i>&nbsp; Linkedin</a>
+				<a href="https://github.com/garrygrewal" class="rightLink"><i class="fa fa-github fa-fw" aria-hidden="true"></i>&nbsp; Github</a>
+				<a href="https://drive.google.com/file/d/1bleEjdaGL50IU05mYgHppTxGXFzYjAB5/view?usp=sharing" class="rightLink">Resume</a>
+				<a href="home.html#projects" class="rightLink">Projects</a>
+			  <a href="javascript:void(0);" class="icon-mobile" onclick="myFunction()">
+			    <i class="fa fa-bars"></i>
+			  </a>
+			</div>
+
+      <ul class="header">
+        <li class="headerItemLeft"><a href="home.html" class="headerLink-logo">Garry Grewal</a></li>
+				<li class="headerItemRight"><a href="mailto:garryg@sfu.ca" class="headerLink"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+				<li class="headerItemRight"><a href="https://www.linkedin.com/in/garry-grewal/" class="headerLink"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+				<li class="headerItemRight"><a href="https://github.com/garrygrewal" class="headerLink"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
+				<li class="headerItemRight"><a href="https://drive.google.com/file/d/1bleEjdaGL50IU05mYgHppTxGXFzYjAB5/view?usp=sharing" class="headerLink">Resume</a></li>
+        <li class="headerItemRight"><a href="home.html#projects" class="headerLink">Projects</a></li>
+      </ul>
+
+      <div class="row banner-row-project-candy wrap-reverse-content">
+        <div class="column banner-column-text-over banner-image-text-order">
+          <div class="banner-column-text">
+						<p class="banner-title">Web Development</p>
+            <p class="banner-sub-title">Click Here to Get Candy</p>
+						<p class="banner-description">The world’s first
+							AI powered candy dispensing system.</p>
+          </div>
+        </div>
+				<div class="column banner-image-column-order">
+          <div class="banner-column-image">
+						<img src="images/candyBannerImageFinal2.png" alt="ClickHereToGetCandy" class="laptop-image-banner">
+          </div>
+        </div>
+      </div>
+    </div>
+
+		<div id="project-details-section" class="row github-button-row">
+      <div class="column github-button-col">
+					<a href="https://github.com/garrygrewal/click-here-to-get-candy" class="github-repo-link-button github-repo-link-button1">
+						<i class="fa fa-github fa-2x github-icon" aria-hidden="true"></i>
+						<span class="github-button-icon-text">Github Repo</span>
+					</a>
+      </div>
+    </div>
+		<div id="project-details-section" class="row">
+      <div class="column project-details-page">
+					<ul class="proj-details-list">
+						<li><span class="important-text">Type:</span> Interactive Artwork, Web Server</li>
+						<li><span class="important-text">Team Size:</span> 3</li>
+						<li><span class="important-text">Time Frame:</span> 1 month</li>
+						<li><span class="important-text">Role:</span> Interaction Design, Programmer, Prototyping</li>
+					</ul>
+      </div>
+    </div>
+
+
+		<!-- The Modal - gives errors in w3checker due to src and alt missing in img tag-->
+		<div id="myModal" class="modal">
+			<span class="close">&times;</span>
+			<img class="modal-content" id="img01">
+			<div id="caption"></div>
+		</div>
+
+    <div class='row'>
+			<div class='column proj-body-text'>
+
+					<div class='proj-section first-overview'>
+						<p class="header-level2">Overview</p>
+						<p class="proj-details-text">Click Here to Get Candy is an interactive art installation that was constructed over the course of one month.
+							I was tasked with working on both the physical component and the web server. My primary responsibilities included setting up Arduino motors to dispense candy,
+							designing interaction touchpoints, and programming the front-end and back-end of the web server. </p>
+					</div>
+
+					<div class="proj-section">
+						<p class="header-level2">Problem</p>
+						<p class="proj-details-text">We began this project with the idea of spreading awareness
+							towards biased algorithms that are used in artificial intelligent machines today. After conducting
+							research, we soon realized that many companies utilize these algorithms to automate many tasks such
+							as hiring new job candidates, approving people for bank loans or schools, and many more things. The
+							problem with this approach is that data is often polluted by other insignificant factors such as gender
+							and race.</p>
+					</div>
+
+
+					<div class='proj-section'>
+						<p class="header-level2">Interaction</p>
+						<p class="proj-details-text">After completing our research, we decided on creating a machine learning candy dispenser
+							that would only give candy to participants that passed our biased algorithm. We planned to mimic current AI algorithms
+							used in society today to raise awareness on the issue.</p>
+						<p class="proj-details-text">We chose to use candy as a reward for the childhood semantics revolving around the concept of
+							candy, as in a sweet reward that is given to those who deserve it.</p>
+						<figure>
+							<img id="candy-initial-sketches" src="images/candy-drawing.png" title="Initial sketches for Click Here To Get Candy" alt="Initial sketches for Click Here To Get Candy" class="proj-page-image">
+							<figcaption>Initial sketches of the physical prototype</figcaption>
+						</figure>
+						<p class="proj-details-text">Participants will be judged on this decision by the following criteria: <span class="important-text">Name</span>,
+							<span class="important-text">Sex</span>, <span class="important-text">Mood</span>, <span class="important-text">Age</span>, and
+							<span class="important-text">Random Number Selection</span>. The weighing of the questions varies. Some answers to questions will have a larger impact on whether
+							that person receives candy or not. While other questions will have little to no impact on the decision. During peer feedback and
+							critiques, we were advised that adding a random/irrelevant factor makes the testing more interesting, and makes the determining
+							factors much less evident. We followed this advice to create a more immersive interactive experience for our audience.</p>
+						<figure>
+							<img id="candy-interaction-diagram" src="images/candy-interaction-diagram.png" title="Interaction diagram for Click Here To Get Candy" alt="Interaction diagram for Click Here To Get Candy" class="proj-page-image">
+							<figcaption>Interaction diagram</figcaption>
+						</figure>
+					</div>
+					<div class="proj-section">
+						<p class="header-level2">Physical Component</p>
+						<p class="proj-details-text">In order to dispense the candy automatically I decided to use Arduino to communicate serially with our
+							web server. When a participant would pass our algorithm, our server would send a signal to Arduino to rotate its motors to dispense
+							one piece of candy.</p>
+						<figure>
+							<img id="candy-arduino" src="images/candy-arduino.jpg" title="Setting up Arduino for Click Here To Get Candy" alt="Setting up Arduino for Click Here To Get Candy" class="proj-page-image">
+							<figcaption>Physical protoype using Arduino motors to dispense candy</figcaption>
+						</figure>
+					</div>
+					<div class="proj-section">
+						<p class="header-level2">Web Server</p>
+            <p class="proj-details-text">As we needed to be able to easily communicate serially with Arduino, we decided to construct our web
+							server using Processing, which has a built-in library to work with Arduino. For the machine to decide which participants to accept
+							or reject, I created an “ideal user model” that contained data points on possible values for age, sex, mood, and random number. Once the
+							participant provided their answers, JavaScript was utilized to evaluate their credentials against our model. Finally, the post request handler would
+							send a value to Arduino to spin its motors if the participant’s credentials were accepted. </p>
+						<p class="proj-details-text">To extract the age, sex, and mood of the participant I utilized a face analyzing API that would get this
+							information from a picture of the participant’s face. Similar to our “ideal user model” that was used to make the decision on whether a
+							participant would get candy or not, this face API has several models to intelligently guess a users <span class="important-text">age</span>, <span class="important-text">sex</span>, and <span class="important-text">mood</span>. </p>
+						<figure>
+							<img id="candy-display" src="images/candy-display.jpg" title="Click Here To Get Candy on display at art exhibition" alt="Click Here To Get Candy on display at art exhibition" class="proj-page-image">
+							<figcaption>Final model shown on display at showcase. Participants were invited to interact with the artwork.</figcaption>
+						</figure>
+						<video src="videos/candy-full-video.mp4" class="proj-page-video" autoplay loop muted>
+							<p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
+						</video>
+						<video src="videos/candy-interface-video.mp4" class="proj-page-video" autoplay loop muted>
+							<p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
+						</video>
+					</div>
+
+					<div class="proj-section">
+						<p class="header-level2">Reflection</p>
+						<p class="proj-details-text">This artwork highlights the potential dangers of misused technology, i.e. how an algorithm would inherit the values and ideology of its creator. Future refinements for this project would include improving the physical art piece to look aesthetically pleasing. This project has helped develop my programming abilities in languages such as Processing, Arduino, HTML, CSS, and JavaScript. Furthermore, this project gave me the opportunity to examine different varying interactions a user can have with an interface and how I, as a designer, can create these experiences for the user. </p>
+					</div>
+      </div>
+    </div>
+
+		<div class='row'>
+      <div class='column foot-col'>
+        <div class="foot-box">
+					<a class="footer-link" href="mailto:garryg@sfu.ca"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+					<a class="footer-link" href="https://www.linkedin.com/in/garry-grewal/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					<a class="footer-link" href="https://github.com/garrygrewal"><i class="fa fa-github" aria-hidden="true"></i></a>
+					<a class="footer-link" href="https://drive.google.com/file/d/1bleEjdaGL50IU05mYgHppTxGXFzYjAB5/view?usp=sharing"><i class="fa fa-id-card" aria-hidden="true"></i></a>
+				</div>
+				<div class="foot-box">
+          <p>© 2019 Garry Grewal.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById("candy-initial-sketches");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById("candy-interaction-diagram");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById("candy-arduino");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById("candy-display");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
+	<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  //document.documentElement.scrollTop = 0;
+			window.scrollTo({top: 0, behavior: 'smooth'});
+		}
+	</script>
+</body>
+</html>

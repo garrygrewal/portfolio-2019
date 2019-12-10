@@ -1,0 +1,79 @@
+/*
+Navigation Bar
+*/
+.topnav {
+  display: none;
+  overflow: hidden;
+  background-color: #FA7268;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  padding-left: 12vw;
+  padding-right: 12vw;
+  padding-top: 5vh;
+}
+
+.nav-up {
+  top: -40px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.headerItemRight, .rightLink  {
+  padding: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.headerItemLeft, .active {
+  font-weight: bold;
+  padding: 0.75em;
+  font-size: 1.15em;
+  letter-spacing: 0.1em;
+  margin-right: auto;
+  text-transform: uppercase;
+}
+
+.headerLink {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  top: 0;
+  -webkit-transition: top 0.5s ease;
+  transition: top ease 0.5s;
+}
+
+.headerLink-logo {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: background-color 0.5s ease;
+  transition: color ease 0.5s;
+}
+
+.headerLink:hover, .headerLink:focus, .headerLink:active {
+  top: -7.5px;
+}
+
+.headerLink-logo:hover, .headerLink-logo:focus, .headerLink-logo:active {
+  color: #d1d1d1;
+}

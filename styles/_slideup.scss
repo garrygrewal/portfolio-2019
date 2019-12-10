@@ -1,0 +1,51 @@
+/*
+Taken from http://www.justinaguilar.com/animations/# to use for
+subtle animations
+
+Made by Justin Aguilar
+
+www.justinaguilar.com/animations/
+
+==============================================
+*/
+
+#hypetracker-animate, #candy-animate, #youme-animate {
+  visibility: visible;
+}
+
+.slideUp{
+	animation-name: slideUp;
+	-webkit-animation-name: slideUp;
+
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease;
+	-webkit-animation-timing-function: ease;
+
+	visibility: visible !important;
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(100%);
+	}
+	50%{
+		transform: translateY(-8%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+@-webkit-keyframes slideUp {
+	0% {
+		-webkit-transform: translateY(100%);
+	}
+	50%{
+		-webkit-transform: translateY(-8%);
+	}
+	100% {
+		-webkit-transform: translateY(0%);
+	}
+}

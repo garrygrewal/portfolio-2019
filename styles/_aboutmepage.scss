@@ -1,0 +1,43 @@
+/*
+About me - Page
+*/
+.banner-about-page {
+  padding-top: 5vh;
+}
+
+.about-me-image {
+  width: 35vw;
+  height: auto;
+}
+
+.social-media-links {
+  align-self: center;
+  padding-bottom: 10vh;
+}
+
+.icon-mobile {
+  color: #000;
+}
+
+.icon {
+  color: #000;
+  -webkit-transition: background-color 0.5s ease;
+  transition: color ease 0.5s;
+}
+
+.social-media-icon {
+  text-align: center;
+}
+
+.social-media-links a p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.icon:hover, .icon:active {
+  color: #FA7268;
+}
+
+.get-in-touch {
+  font-weight: bold;
+}

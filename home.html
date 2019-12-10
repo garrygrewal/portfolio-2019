@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
+	<!-- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="css/main2.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+
+	<link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" async></script>
+	<script src="js/mobile_nav.js" async></script>
+
+  <title>Garry Grewal</title>
+</head>
+<body>
+  <div class="main-content box">
+
+    <div class="banner-image-background">
+
+			<div class="topnav" id="myTopnav">
+			  <a href="home.html" class="active">Garry Grewal</a>
+				<a href="#" class="rightLink blank"></a>
+				<a href="mailto:garryg@sfu.ca" class="rightLink"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp; Email</a>
+				<a href="https://www.linkedin.com/in/garry-grewal/" class="rightLink"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i>&nbsp; Linkedin</a>
+				<a href="https://github.com/garrygrewal" class="rightLink"><i class="fa fa-github fa-fw" aria-hidden="true"></i>&nbsp; Github</a>
+				<a href="https://drive.google.com/file/d/1bleEjdaGL50IU05mYgHppTxGXFzYjAB5/view?usp=sharing" class="rightLink">Resume</a>
+				<a href="#projects" class="rightLink">Projects</a>
+			  <a href="javascript:void(0);" class="icon-mobile" onclick="myFunction()">
+			    <i class="fa fa-bars"></i>
+			  </a>
+			</div>
+
+      <ul class="header">
+        <li class="headerItemLeft"><a href="home.html" class="headerLink-logo">Garry Grewal</a></li>
+				<li class="headerItemRight"><a href="mailto:garryg@sfu.ca" class="headerLink"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+				<li class="headerItemRight"><a href="https://www.linkedin.com/in/garry-grewal/" class="headerLink"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+				<li class="headerItemRight"><a href="https://github.com/garrygrewal" class="headerLink"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
+				<li class="headerItemRight"><a href="https://drive.google.com/file/d/1bleEjdaGL50IU05mYgHppTxGXFzYjAB5/view?usp=sharing" class="headerLink">Resume</a></li>
+        <li class="headerItemRight"><a href="#projects" class="headerLink">Projects</a></li>
+      </ul>
+
+      <div class="row banner-row">
+        <div class="column banner-title-column">
+          <div class="inner-container">
+						<div class="boxbox">
+							<div class="header-level1-banner">
+							  <p class="typewrite" data-period="2000" data-type='[ "Hello, I am Garry.", "I am a UX designer from Vancouver, Canada.", "I enjoy designing unique experiences.", "I also have a background in computer science." ]'>
+							    <span class="wrap"></span>
+							  </p>
+							</div>
+						</div>
+          </div>
+        </div>
+      </div>
+
+			<div class="row arrow-down">
+				<div class="column">
+					<div id="section05" class="demo">
+						<a href="#projects"><span></span></a>
+					</div>
+				</div>
+			</div>
+
+    </div>
+
+    <div id="projects" class="row home-projects-title-layer">
+      <div class="column project-title-column">
+        <div class="inner-container">
+          <p class="home-heading-level1">Projects</p>
+        </div>
+      </div>
+    </div>
+
+		<div class="row">
+      <a href="youme.html" class="home-project-link">
+      <div class="column home-project-column-youme">
+        <div class="color-overlay">
+          <div id="youme-animate" class="inner-container">
+            <p class="project-headinglevel1">UI/UX Design</p>
+						<p class="project-headinglevel2">YouMe</p>
+            <p class="project-description-text">An inclusive sexual education mobile app</p>
+						<img src="images/vanuxawardslogofinal.png" alt="Vancouver UX Awards 2019" class="testing">
+          </div>
+        </div>
+      </div>
+      </a>
+    </div>
+
+    <div class="row">
+      <a href="hypetracker.html" class="home-project-link">
+      <div class="column home-project-column-hypetracker">
+        <div class="color-overlay">
+          <div id="hypetracker-animate" class="inner-container">
+            <p class="project-headinglevel1">Web Development</p>
+						<p class="project-headinglevel2">Hype Tracker</p>
+            <p class="project-description-text">A full-stack web application</p>
+          </div>
+        </div>
+      </div>
+      </a>
+    </div>
+
+    <div class="row">
+      <a href="clickheretogetcandy.html" class="home-project-link">
+      <div class="column home-project-column-clickheretogetcandy">
+        <div class="color-overlay">
+          <div id="candy-animate" class="inner-container">
+            <p class="project-headinglevel1">Web Development</p>
+						<p class="project-headinglevel2">Click Here to Get Candy</p>
+            <p class="project-description-text">An interactive art installation</p>
+          </div>
+        </div>
+      </div>
+      </a>
+    </div>
+
+    <div class='row'>
+      <div class='column foot-col'>
+        <div class="foot-box">
+					<a class="footer-link" href="mailto:garryg@sfu.ca"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+					<a class="footer-link" href="https://www.linkedin.com/in/garry-grewal/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					<a class="footer-link" href="https://github.com/garrygrewal"><i class="fa fa-github" aria-hidden="true"></i></a>
+					<a class="footer-link" href="https://drive.google.com/file/d/1bleEjdaGL50IU05mYgHppTxGXFzYjAB5/view?usp=sharing"><i class="fa fa-id-card" aria-hidden="true"></i></a>
+				</div>
+				<div class="foot-box">
+          <p>© 2019 Garry Grewal.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+	<script>
+			$(window).scroll(function() {
+				$('#youme-animate').each(function(){
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos < topOfWindow+600) {
+						$(this).addClass("slideUp");
+					}
+				});
+			});
+			$(window).scroll(function() {
+				$('#candy-animate').each(function(){
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos < topOfWindow+600) {
+						$(this).addClass("slideUp");
+					}
+				});
+			});
+	</script>
+
+	<script>
+			$(window).scroll(function() {
+				$('#hypetracker-animate').each(function(){
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos < topOfWindow+600) {
+						$(this).addClass("slideUp");
+					}
+				});
+			});
+			$(window).scroll(function() {
+				$('#candy-animate').each(function(){
+				var imagePos = $(this).offset().top;
+
+				var topOfWindow = $(window).scrollTop();
+					if (imagePos < topOfWindow+600) {
+						$(this).addClass("slideUp");
+					}
+				});
+			});
+	</script>
+
+	<!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_smooth_scroll_jquery-->
+	<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+	</script>
+	<script>
+		var TxtType = function(el, toRotate, period) {
+	        this.toRotate = toRotate;
+	        this.el = el;
+	        this.loopNum = 0;
+	        this.period = parseInt(period, 10) || 2000;
+	        this.txt = '';
+	        this.tick();
+	        this.isDeleting = false;
+	    };
+
+	    TxtType.prototype.tick = function() {
+	        var i = this.loopNum % this.toRotate.length;
+	        var fullTxt = this.toRotate[i];
+
+	        if (this.isDeleting) {
+	        this.txt = fullTxt.substring(0, this.txt.length - 1);
+	        } else {
+	        this.txt = fullTxt.substring(0, this.txt.length + 1);
+	        }
+
+	        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+	        var that = this;
+	        var delta = 200 - Math.random() * 100;
+
+	        if (this.isDeleting) { delta /= 3; }
+
+	        if (!this.isDeleting && this.txt === fullTxt) {
+	        delta = this.period;
+	        this.isDeleting = true;
+	        } else if (this.isDeleting && this.txt === '') {
+	        this.isDeleting = false;
+	        this.loopNum++;
+	        delta = 500;
+	        }
+
+	        setTimeout(function() {
+	        that.tick();
+	        }, delta);
+	    };
+
+	    window.onload = function() {
+	        var elements = document.getElementsByClassName('typewrite');
+	        for (var i=0; i<elements.length; i++) {
+	            var toRotate = elements[i].getAttribute('data-type');
+	            var period = elements[i].getAttribute('data-period');
+	            if (toRotate) {
+	              new TxtType(elements[i], JSON.parse(toRotate), period);
+	            }
+	        }
+	        // INJECT CSS
+	        var css = document.createElement("style");
+	        css.type = "text/css";
+	        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+	        document.body.appendChild(css);
+    };
+	</script>
+</body>
+</html>

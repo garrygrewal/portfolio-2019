@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
+	<!-- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="css/main2.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+
+	<link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" async></script>
+	<script src="js/mobile_nav.js" async></script>
+
+  <title>Garry Grewal</title>
+</head>
+<body>
+  <div class="main-content box">
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
+
+    <div class="banner-image-background">
+			<div class="topnav" id="myTopnav">
+			  <a href="home.html" class="active">Garry Grewal</a>
+				<a href="#" class="rightLink blank"></a>
+				<a href="mailto:garryg@sfu.ca" class="rightLink"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp; Email</a>
+				<a href="https://www.linkedin.com/in/garry-grewal/" class="rightLink"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i>&nbsp; Linkedin</a>
+				<a href="https://github.com/garrygrewal" class="rightLink"><i class="fa fa-github fa-fw" aria-hidden="true"></i>&nbsp; Github</a>
+				<a href="https://drive.google.com/file/d/1bleEjdaGL50IU05mYgHppTxGXFzYjAB5/view?usp=sharing" class="rightLink">Resume</a>
+				<a href="home.html#projects" class="rightLink">Projects</a>
+			  <a href="javascript:void(0);" class="icon-mobile" onclick="myFunction()">
+			    <i class="fa fa-bars"></i>
+			  </a>
+			</div>
+
+      <ul class="header">
+        <li class="headerItemLeft"><a href="home.html" class="headerLink-logo">Garry Grewal</a></li>
+				<li class="headerItemRight"><a href="mailto:garryg@sfu.ca" class="headerLink"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+				<li class="headerItemRight"><a href="https://www.linkedin.com/in/garry-grewal/" class="headerLink"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+				<li class="headerItemRight"><a href="https://github.com/garrygrewal" class="headerLink"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
+				<li class="headerItemRight"><a href="https://drive.google.com/file/d/1bleEjdaGL50IU05mYgHppTxGXFzYjAB5/view?usp=sharing" class="headerLink">Resume</a></li>
+        <li class="headerItemRight"><a href="home.html#projects" class="headerLink">Projects</a></li>
+      </ul>
+
+      <div class="row banner-row-project-hype wrap-reverse-content">
+        <div class="column banner-column-text-over banner-image-text-order">
+          <div class="banner-column-text">
+						<p class="banner-title">Web Development</p>
+            <p class="banner-sub-title">Hype Tracker</p>
+						<p class="banner-description">A full stack web application that visualizes the
+							popularity of sneakers.</p>
+          </div>
+        </div>
+				<div class="column banner-image-column-order">
+          <div class="banner-column-image">
+						<img src="images/hypetrackerBannerImage2.png" alt="HypeTracker" class="laptop-image-banner">
+          </div>
+        </div>
+      </div>
+    </div>
+
+		<div id="project-details-section" class="row github-button-row">
+      <div class="column github-button-col">
+					<a href="https://github.com/garrygrewal/hype-tracker" class="github-repo-link-button github-repo-link-button1">
+						<i class="fa fa-github fa-2x github-icon" aria-hidden="true"></i>
+						<span class="github-button-icon-text">Github Repo</span>
+					</a>
+      </div>
+    </div>
+		<div id="project-details-section" class="row">
+      <div class="column project-details-page">
+					<ul class="proj-details-list">
+						<li><span class="important-text">Type:</span> Web Application</li>
+						<li><span class="important-text">Team Size:</span> 2</li>
+						<li><span class="important-text">Time Frame:</span> 1 month</li>
+						<li><span class="important-text">Role:</span> Programmer</li>
+					</ul>
+      </div>
+    </div>
+
+		<!-- The Modal - gives errors in w3checker due to src and alt missing in img tag-->
+		<div id="myModal" class="modal">
+			<span class="close">&times;</span>
+			<img class="modal-content" id="img01">
+			<div id="caption"></div>
+		</div>
+
+    <div class='row'>
+			<div class='column proj-body-text'>
+
+					<div class='proj-section first-overview'>
+						<p class="header-level2">Overview</p>
+						<p class="proj-details-text">This project was part of a one month final project for an internet computing course.
+							My primary responsibilities for this project included designing the database, and programming the back-end.</p>
+					</div>
+
+					<div class="proj-section">
+						<p class="header-level2">Problem</p>
+						<p class="proj-details-text">The idea of this project began with our curiosity of whether a specific sneaker
+              was going to sell out or not. One way to track this is to visit different social media websites, such as Twitter,
+              Instagram, and Reddit, and calculate the number of comments and likes, posts about that specific sneaker
+              accumulates. The more popular a sneaker is, the more likely it is to sell out.</p>
+					</div>
+
+
+					<div class='proj-section'>
+						<p class="header-level2">Database</p>
+						<p class="proj-details-text">I first set out to sketch an Entity-Relation diagram of a database that would contain unreleased sneakers.
+              Each sneaker would have a ‘Ranking’. The rankings would be used to calculate a score from different social
+              media platforms based on the number of mentions/likes the sneaker’s name accumulated.</p>
+						<figure>
+							<img id="hype-er-diagram" src="images/hypetracker-er-diagram.png" title="Entity-relation diagram for Hype Tracker" alt="Entity-relation diagram for Hype Tracker" class="proj-page-image-er-sketch">
+							<figcaption>Initial sketches of the ER diagram</figcaption>
+						</figure>
+            <p class="proj-details-text">In addition to just viewing sneakers popularity on social media platforms, we also
+              enabled users to register for an account in order to add sneakers to their ‘Watchlist’. The Watchlist feature allows
+              users to easily track the popularity of their favourite sneakers. After finalizing the ER diagram, I began implementing
+              it in MySQL.</p>
+						<figure>
+							<img id="hype-sql-diagram" src="images/hypetracker-sql-diagram.png" title="SQL diagram for Hype Tracker" alt="SQL diagram for Hype Tracker" class="proj-page-image">
+							<figcaption>Database implemented in MySQL</figcaption>
+						</figure>
+					</div>
+
+					<div class='proj-section'>
+						<p class="header-level2">Final Website</p>
+						<p class="proj-details-text">I utilized Twitter and Reddit API’s to search the number of times the sneaker’s name was
+              mentioned on the platform. Once per day, a request was made to the API’s and the calculated scores were stored in the database.
+							The Twitter score is shown by text, while the Reddit score is plotted on a line chart, and then displayed on that specific sneaker's details page.</p>
+						<figure>
+							<img id="hype-details-page" src="images/hypetracker-details-page.png" title="Hype Tracker Details Page" alt="Hype Tracker Details Page" class="proj-page-image">
+							<figcaption>Sneaker page showing details on the specific sneaker.</figcaption>
+						</figure>
+						<figure>
+							<img id="hype-home-page" src="images/hypetracker-home-page.png" title="Hype Tracker Home Page" alt="Hype Tracker Home Page" class="proj-page-image">
+							<figcaption>Home page showing a collection of sneakers set to release that month.</figcaption>
+						</figure>
+					</div>
+
+          <div class='proj-section'>
+            <p class="header-level2">Reflection</p>
+            <p class="proj-details-text">Because of strict-time frames, more emphasis was put on implementing the core features of the back-end of this project than the front-end.
+							This project has helped me further develop my programming skills in languages such as PHP, HTML, CSS, and JavaScript. In addition, I gained a deeper understanding on
+							how to extract data from other websites using their APIs. </p>
+          </div>
+      </div>
+    </div>
+
+		<div class='row'>
+      <div class='column foot-col'>
+        <div class="foot-box">
+					<a class="footer-link" href="mailto:garryg@sfu.ca"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+					<a class="footer-link" href="https://www.linkedin.com/in/garry-grewal/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					<a class="footer-link" href="https://github.com/garrygrewal"><i class="fa fa-github" aria-hidden="true"></i></a>
+					<a class="footer-link" href="https://drive.google.com/file/d/1bleEjdaGL50IU05mYgHppTxGXFzYjAB5/view?usp=sharing"><i class="fa fa-id-card" aria-hidden="true"></i></a>
+				</div>
+				<div class="foot-box">
+          <p>© 2019 Garry Grewal.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById("hype-er-diagram");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById("hype-sql-diagram");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById("hype-home-page");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById("hype-details-page");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
+	<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  //document.documentElement.scrollTop = 0;
+			window.scrollTo({top: 0, behavior: 'smooth'});
+		}
+	</script>
+</body>
+</html>

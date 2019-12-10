@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
+	<!-- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="css/main2.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+
+	<link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" async></script>
+	<script src="js/mobile_nav.js" async></script>
+
+
+  <title>Garry Grewal</title>
+</head>
+<body>
+  <div class="main-content box">
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up" aria-hidden="true"></i></button>
+
+    <div class="banner-image-background">
+			<div class="topnav" id="myTopnav">
+			  <a href="home.html" class="active">Garry Grewal</a>
+				<a href="#" class="rightLink blank"></a>
+				<a href="mailto:garryg@sfu.ca" class="rightLink"><i class="fa fa-envelope fa-fw" aria-hidden="true"></i>&nbsp; Email</a>
+				<a href="https://www.linkedin.com/in/garry-grewal/" class="rightLink"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i>&nbsp; Linkedin</a>
+				<a href="https://github.com/garrygrewal" class="rightLink"><i class="fa fa-github fa-fw" aria-hidden="true"></i>&nbsp; Github</a>
+				<a href="https://drive.google.com/file/d/1bleEjdaGL50IU05mYgHppTxGXFzYjAB5/view?usp=sharing" class="rightLink">Resume</a>
+				<a href="home.html#projects" class="rightLink">Projects</a>
+			  <a href="javascript:void(0);" class="icon-mobile" onclick="myFunction()">
+			    <i class="fa fa-bars"></i>
+			  </a>
+			</div>
+
+      <ul class="header">
+        <li class="headerItemLeft"><a href="home.html" class="headerLink-logo">Garry Grewal</a></li>
+				<li class="headerItemRight"><a href="mailto:garryg@sfu.ca" class="headerLink"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+				<li class="headerItemRight"><a href="https://www.linkedin.com/in/garry-grewal/" class="headerLink"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+				<li class="headerItemRight"><a href="https://github.com/garrygrewal" class="headerLink"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
+				<li class="headerItemRight"><a href="https://drive.google.com/file/d/1bleEjdaGL50IU05mYgHppTxGXFzYjAB5/view?usp=sharing" class="headerLink">Resume</a></li>
+        <li class="headerItemRight"><a href="home.html#projects" class="headerLink">Projects</a></li>
+      </ul>
+
+      <div class="row banner-row-project-hype wrap-reverse-content">
+        <div class="column banner-column-text-over banner-image-text-order">
+          <div class="banner-column-text">
+            <p class="banner-title">UI/UX Design</p>
+						<p class="banner-sub-title">YouMe</p>
+						<p class="banner-description">An inclusive sexual education app that allows you to learn the basics of sexual education.</p>
+						<p class="banner-description"><a href="https://vancouveruxawards.com/2019-finalists"><img src="images/vanuxawardslogofinal2.png" alt="Vancouver UX Awards 2019" class="proj-page-image-vanux"></a></p>
+					</div>
+        </div>
+				<div class="column banner-image-column-order">
+          <div class="banner-column-image">
+						<img src="images/youmeBannerImageFinal3.png" alt="YouMe" class="laptop-image-banner">
+          </div>
+        </div>
+      </div>
+    </div>
+
+		<div id="project-details-section" class="row github-button-row">
+      <div class="column github-button-col">
+					<a href="http://www.sfu.ca/~garryg/iat334/FinalProjectWebsite/home.html" class="github-repo-link-button github-repo-link-button1">
+						<i class="fa fa-external-link fa-2x social-media-icon" aria-hidden="true"></i>
+						<span class="github-button-icon-text">Project Website</span>
+					</a>
+      </div>
+    </div>
+		<div id="project-details-section" class="row">
+      <div class="column project-details-page">
+					<ul class="proj-details-list">
+						<li><span class="important-text">Type:</span> User Interface</li>
+						<li><span class="important-text">Team Size:</span> 5</li>
+						<li><span class="important-text">Time Frame:</span> 6 weeks</li>
+						<li><span class="important-text">Role:</span> Wireframing, Prototyping, Interface Design</li>
+					</ul>
+      </div>
+    </div>
+
+		<!-- The Modal - gives errors in w3checker due to src and alt missing in img tag-->
+		<div id="myModal" class="modal">
+			<span class="close">&times;</span>
+			<img class="modal-content" id="img01">
+			<div id="caption"></div>
+		</div>
+
+    <div class='row'>
+			<div class='column proj-body-text'>
+
+					<div class='proj-section first-overview'>
+						<p class="header-level2">Overview</p>
+						<p class="proj-details-text">Over the course of 6 weeks, I helped create a mobile user interface from initial ideation to a fully interactive prototype. My primary responsibilities for this project included constructing wireframes using Sketch and Figma, conducting usability testing, and creating the interactive prototype using Principle.</p>
+					</div>
+
+					<div class="proj-section">
+						<p class="header-level2">Problem</p>
+						<p class="proj-details-text">Through our primary research, we found that in general young individuals learn about sex
+							education through online resources that may not be fully accurate and sufficient. Therefore, it is crucial
+							to provide a safe space for these individuals to receive the proper information and support around the topic
+							of sex. To gain further insight to the problems in this domain, my team and I conducted surveys with 20+ high school and college students.
+							We found that <span class="important-text">68.4%</span> of our research participants learned about sexual health and gender identity online, while <span class="important-text">26.3%</span> felt that there was not enough resources and support about their sexual health and identity.</p>
+						<figure>
+							<img id="research-pie-chart" src="images/research_piechart.png" alt="Research findings - 68.4% learned about sexual health and gender identity online. 26.3% felt that there was not enough resources and support about their sexual health and identity." class="proj-page-image research_piechart">
+							<figcaption>68.4% research participants learned about sexual health and gender identity online, while 26.3% felt that there were not enough resources and support about their sexual health and identity.</figcaption>
+						</figure>
+						<p class="proj-details-text">We also found that the current sexual education curriculum in many countries, such
+							as Canada and the USA, lack information that is tailored to fit the needs of LGBTQ+ youth. </p>
+					</div>
+
+
+					<div class='proj-section'>
+						<p class="header-level2">Goals</p>
+						<p class="proj-details-text">Inclusive sexual education should include information for all students about
+						sexual orientation and gender identity and be designed with the needs of LGBTQ+ students. It also should include
+						depictions of LGBTQ+ people and same-sex relationships in a positive way and promote STI and STD prevention method.
+						The most important part is that we avoid making assumptions on any sexual orientation and identities.</p>
+						<ol class="proj-reflection-list">
+							<li>Bridge the gap between underrepresented groups and sexual education</li>
+							<li>Create a personal and private learning experience for all learners</li>
+							<li>Encourage individuals to feel more comfortable about talking about sex and sexual health</li>
+							<li>Provide valuable and reliable sources for users to learn</li>
+						</ol>
+					</div>
+
+					<div class='proj-section'>
+						<p class="header-level2">Personas</p>
+						<p class="proj-details-text">After conducting research, I set out to create personas based on our target audience of teenagers. In particular teenagers like our persona Aleks
+						who is a part of the LGBTQ+ community. These personas informed our overall participants for our research and user testing
+						that was done.</p>
+						<figure>
+							<img id="personas-persona1" src="images/persona_aleks.png" alt="Primary Persona" class="proj-page-image persona_image">
+							<figcaption>Primary Persona #1 - Wants to learn about homosexuality intimacy, receive support, and connect with the LGBTQ+ community.</figcaption>
+						</figure>
+						<figure>
+							<img id="personas-persona2" src="images/persona_dad.png" alt="Stakeholder Persona" class="proj-page-image persona_image">
+							<figcaption>Stakeholder Persona #2 - Wants to equip his kids with the best resources at their disposal, so they can make well informed decisions in the future.</figcaption>
+						</figure>
+						<p class="proj-details-text">Because our applications primary goal is to educate the youth we did incorporate more working
+						features within that scope to help us better understand how we could better refine our final product with regard to achieving our main goal.
+						As a result we ended up making the parents persona as our secondary persona as they have more of an involvment with how their teenager learns
+						about sex education.</p>
+					</div>
+					<div class='proj-section'>
+						<p class="header-level2">Experience Map</p>
+						<p class="proj-details-text">In addition, we set out to create a journey map in order to map out the experience our target audience would experience.
+						This journey map explores the app's learning modules and plays through it's first lesson.</p>
+						<figure>
+							<img id="personas-journey-map" src="images/primary_experience_map.png" alt="Experience map for primary persona" class="proj-page-image persona_image">
+							<figcaption>Experience map for our primary persona, Aleks.</figcaption>
+						</figure>
+					</div>
+
+					<div class='proj-section'>
+						<p class="header-level2">Initial Wireframes & Wireflows</p>
+						<p class="proj-details-text">With the aid of our research, personas, and journey map, we began the initial designs of our application. One of my major
+							roles for this project was to create the wireframes using Sketch and Figma.</p>
+						<figure>
+							<img id="wireframes-all-wireframes-wireflow1" src="images/wireflow1.png" alt="Initial wireflow" class="proj-page-image wireframe_image_sketch">
+							<figcaption>Initial wireflow - answering quiz questions</figcaption>
+						</figure>
+						<figure class="wireflow-fig">
+							<img id="wireframes-all-wireframes-wireflow2" src="images/wireflow2.png" alt="Initial wireflow" class="proj-page-image wireframe_image_sketch">
+							<figcaption>Initial wireflow - three main screens</figcaption>
+						</figure>
+					</div>
+
+					<div class='proj-section'>
+						<p class="header-level2">User Testing</p>
+						<p class="proj-details-text">A total of 8 user tests were conducted to test participant's overall experience and
+						opinion of the app. Of this group, 2 users were aged between 12 and 17, 4 were aged 18+, and 2 were parents aged 40+.
+						Each of these individuals were asked to test the app on their mobile phone and complete a series of tasks. When these tasks
+						were completed, participants were then asked to explore the app without any guidance. Throughout the test, participants were
+						encouraged to voice any questions or concerns they may have had about the app.</p>
+						<p class="proj-details-text">After completing our usability testing and reviewing the feedback, our team aimed to address specific issues by: </p>
+						<ol class="proj-reflection-list">
+							<li>Increasing our credibility amongst our audience by affiliating with a credible sexual education resource</li>
+							<li>Providing more insight to the purpose of the Discover Page, and refining the overall tone of the page</li>
+							<li>Providing clarity on the functionality of the reward systems, and explaining the purpose of the badges and how to achieve them</li>
+							<li>Establishing a clear workflow within our learning modules</li>
+						</ol>
+					</div>
+
+					<div class='proj-section'>
+						<p class="header-level2">Final Mockups</p>
+						<p class="proj-details-text">After several iterations of wireframes, I began implementing high-fidelity mockups using Figma and Sketch. Based on our target audience, we wanted to
+							incorporate an overall friendly tone within our app. Therefore, our font and colour choices were chosen with these criteria in mind.</p>
+						<div>
+							<img id="wireframes-wireframe1-final" src="images/finalmockup-home.png" alt="Final Mockup - Home screen" class="proj-page-image wireframe_image">
+							<img id="wireframes-wireframe2-final" src="images/finalmockup-profile.png" alt="Final Mockup - Profile screen" class="proj-page-image wireframe_image">
+							<img id="wireframes-wireframe3-final" src="images/finalmockup-discover.png" alt="Final Mockup - Discover screen" class="proj-page-image wireframe_image">
+							<img id="wireframes-wireframe4-final" src="images/finalmockup-play.png" alt="Final Mockup - Games screen" class="proj-page-image wireframe_image">
+							<img id="wireframes-wireframe5-final" src="images/finalmockup-module-overview.png" alt="Final Mockup - Module overview screen" class="proj-page-image wireframe_image">
+							<img id="wireframes-wireframe6-final" src="images/finalmockup-edit-avatar.png" alt="Final Mockup - Edit avatar screen" class="proj-page-image wireframe_image">
+						</div>
+					</div>
+
+					<div class='proj-video-section'>
+						<p class="header-level2">Interactions</p>
+						<p class="proj-details-text">After designing the screen mockups in Figma and Sketch, I began implementing the mockups in Principle to animate the interactions.</p>
+					</div>
+					<div class='proj-video-section'>
+						<div class="row">
+							<div class="column">
+								<video src="videos/learn-with-iphoneframe-shadow2.mp4" alt="YouMe" class="iphone-content-image" autoplay loop muted>
+									<p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
+								</video>
+							</div>
+							<div class="column">
+								<p class="proj-details-text video-description">The <span class="important-text">Learn</span> feature allows users to learn about a variety of topics ranging from relationships to reproduction through informational
+									videos and articles. Each topic is its own module with a set number of lessons you can complete at your own pace.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class='proj-video-section'>
+						<div class="row">
+							<div class="column">
+								<p class="proj-details-text video-description">The <span class="important-text">Apply</span> feature allows user to apply what they’ve learned through quick and easy interactive quizzes
+									as well as by answering YouMe’s lesson question on the homepage.</p>
+							</div>
+							<div class="column">
+								<video src="videos/apply-with-iphoneframe-shadow2.mp4" alt="YouMe" class="iphone-content-image" autoplay loop muted>
+									<p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
+								</video>
+							</div>
+						</div>
+					</div>
+
+					<div class='proj-video-section'>
+						<div class="row">
+							<div class="column">
+								<video src="videos/discover-with-sticky-header2.mp4" alt="YouMe" class="iphone-content-image" autoplay loop muted>
+									<p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
+								</video>
+							</div>
+							<div class="column">
+								<p class="proj-details-text video-description">The <span class="important-text">Discover</span> feature allows users to access and read exclusive daily content to not only learn more, but also gain advice and hear about stories that they can apply in their own personal lives.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class='proj-video-section'>
+						<div class="row">
+							<div class="column">
+								<p class="proj-details-text video-description">The <span class="important-text">Play</span> feature allows users to unlock fun mini-games to play by themselves or with their friends by completing certain modules and lessons.</p>
+							</div>
+							<div class="column">
+								<video src="videos/play-with-iphoneframe-shadow.mp4" alt="YouMe" class="iphone-content-image" autoplay loop muted>
+									<p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
+								</video>
+							</div>
+						</div>
+					</div>
+
+					<div class='proj-video-section'>
+						<div class="row">
+							<div class="column">
+								<video src="videos/customize-with-iphoneframe-shadow.mp4" alt="YouMe" class="iphone-content-image" autoplay loop muted>
+									<p>If you are reading this, it is because your browser does not support the HTML5 video element.</p>
+								</video>
+							</div>
+							<div class="column">
+								<p class="proj-details-text video-description">The <span class="important-text">Customize</span> feature allows users to spend their golden plums that they have earned by completing lessons and quizzes, checking-in, and answering YouMe’s lesson questions correctly to purchase a variety of shirts and hats to customize YouMe to their liking.</p>
+							</div>
+						</div>
+					</div>
+
+          <div class='proj-section'>
+            <p class="header-level2">Reflection</p>
+            <p class="proj-details-text">This project has helped me grasp a better understanding of mobile design patterns. In addition, this project has helped me become efficient using prototyping tools such as Sketch, Figma, and Principle.</p>
+          </div>
+      </div>
+    </div>
+
+		<div class='row'>
+      <div class='column foot-col'>
+        <div class="foot-box">
+					<a class="footer-link" href="mailto:garryg@sfu.ca"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+					<a class="footer-link" href="https://www.linkedin.com/in/garry-grewal/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					<a class="footer-link" href="https://github.com/garrygrewal"><i class="fa fa-github" aria-hidden="true"></i></a>
+					<a class="footer-link" href="https://drive.google.com/file/d/1bleEjdaGL50IU05mYgHppTxGXFzYjAB5/view?usp=sharing"><i class="fa fa-id-card" aria-hidden="true"></i></a>
+				</div>
+				<div class="foot-box">
+          <p>© 2019 Garry Grewal.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+	<script>
+	// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById("research-pie-chart");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById("personas-persona1");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById("personas-persona2");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById("personas-journey-map");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById("wireframes-wireframe1-final");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById("wireframes-wireframe2-final");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById("wireframes-wireframe3-final");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById("wireframes-wireframe4-final");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById("wireframes-wireframe5-final");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById("wireframes-wireframe6-final");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById("wireframes-all-wireframes-wireflow1");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById("wireframes-all-wireframes-wireflow2");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+	</script>
+	<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  //document.documentElement.scrollTop = 0;
+			window.scrollTo({top: 0, behavior: 'smooth'});
+		}
+	</script>
+</body>
+</html>

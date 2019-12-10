@@ -1,0 +1,174 @@
+/*
+project page - content
+*/
+.inner-container-project-page {
+  align-self: center;
+}
+
+.first-overview {
+  padding-top: 10vh;
+}
+
+.proj-section {
+  align-self: center;
+  width: 50vw;
+  padding-bottom: 10vh;
+}
+
+.proj-video-section {
+  align-self: center;
+  width: 50vw;
+  padding-bottom: 10vh;
+}
+
+#project-details-section {
+  background-color: #E8E8E8;
+}
+
+.process-content-wireframes {
+  align-self: center;
+  width: 50vw;
+}
+
+.proj-page-image {
+  width: 50vw;
+  height: auto;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.proj-page-image-vanux {
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.proj-page-image-er-sketch {
+  width: 25vw;
+  height: auto;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.proj-details-text {
+  line-height: 2rem;
+}
+
+.proj-details-list {
+  list-style: none;
+  line-height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  align-self: center;
+  padding-left: 10vw;
+}
+
+.project-details-page {
+  justify-content: center;
+  width: 100%;
+  height: 25vh;
+}
+
+.proj-page-video {
+  padding-top: 5vh;
+  height: auto;
+  width: 50vw;
+}
+
+.proj-details-list li {
+  width: 50%;
+}
+
+.wireframe_image {
+  width: 15vw;
+  height: auto;
+}
+
+figure {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.8em;
+  color: #999
+}
+
+.important-text {
+  font-weight: bold;
+}
+
+.research_piechart {
+  width: 25vw;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+}
+
+.persona_image {
+  width: 50vw;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.wireframe_image_sketch {
+  width: 50vw;
+  height: auto;
+}
+
+.process-content-wireframes {
+  align-self: center;
+  width: 50vw;
+}
+
+.styleguide_image {
+  width: 50vw;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.proj-reflection-list {
+  list-style: circle;
+  line-height: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.proj-reflection-list li {
+  padding-right: 3vw;
+  padding-bottom: 2vh;
+  margin: 0;
+}
+
+.iphone-content-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+  width: 13vw;
+  height: auto;
+}
+
+.video-description {
+  margin-top: auto;
+  margin-bottom: auto;
+}

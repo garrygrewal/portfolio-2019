@@ -1,0 +1,97 @@
+/*
+Banner Image - home page
+*/
+
+.banner-image-background {
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #FA7268;
+}
+
+.banner-row {
+  padding-top: 25vh;
+  padding-bottom: 5vh;
+}
+
+.banner-row-project-hype {
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+}
+
+.banner-row-project-candy {
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+}
+
+.banner-title-column {
+  justify-content: center;
+}
+
+.banner-title-heading {
+  color: #fff;
+  letter-spacing: 0.1em;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.banner-title-subheading {
+  color: #fff;
+  letter-spacing: 0.05em;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+
+/*
+Banner Image - project page
+*/
+
+.banner-column-text{
+  align-items: flex-end;
+}
+
+.banner-column-text-over {
+  align-self: center;
+}
+
+.banner-column-image{
+  align-self: flex-start;
+}
+
+.banner-title {
+  color: #fff;
+  letter-spacing: 0.05em;
+  font-size: 1.75em;
+  font-weight: bold;
+  padding-left: 13vw;
+  text-transform: uppercase;
+}
+
+.banner-sub-title {
+  color: #fff;
+  letter-spacing: 0.03em;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding-left: 13vw;
+}
+
+.banner-description {
+  color: #fff;
+  line-height: 2rem;
+  padding-left: 13vw;
+  padding-right: 5vw;
+}
+
+.laptop-image-banner {
+  width: 40vw;
+  height: auto;
+}
+
+.proj-page-video-banner {
+  width: 40vw;
+  height: auto;
+}
